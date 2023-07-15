@@ -8,7 +8,7 @@
         body {
             background-color: lightgrey;
         }
-        
+
         header {
             background-color: rgb(45, 43, 43);
             display: flex;
@@ -41,21 +41,69 @@
             font-family: Arial, Helvetica, sans-serif;
             text-decoration: none;
         }
+
+        #scheduleHeader {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #scheduleContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        #scheduleTable {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            height: 589px;
+            overflow: auto;
+        }
+        
+        th{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            background-color: #00838D;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        tbody tr:hover {
+            background-color: #FC4C02;
+            color: white;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tbody td {
+            padding: 10px;
+        }
         
     </style>
 </head>
 
 <header>
     <div>
-        <img src="Miami-Dolphins-logo.png" alt="miami dolphins logo">
+        <img src="images/Miami-Dolphins-logo.png" alt="miami dolphins logo">
     </div>
 
     <div>
-        <img src="Miami-Dolphins-text-logo.png" alt="miami dolphins team name">
+        <img src="images/Miami-Dolphins-text-logo.png" alt="miami dolphins team name">
     </div>
 
     <div id = "flippedLogo">
-        <img src="Miami-Dolphins-logo.png" alt="flipped miami dolphins logo">
+        <img src="images/Miami-Dolphins-logo.png" alt="flipped miami dolphins logo">
     </div>
 </header>
 
@@ -71,6 +119,89 @@
     <div>
         <a href = "schedule.html" id="myLink">Schedule</a>
     </div>
+</div>
+
+<div id = "scheduleHeader">
+    <h1>2023 Miami Dolphins Schedule:</h1>
+</div>
+
+
+<div id = "scheduleContainer">
+
+    <div id="leftPic">
+        <img src="images/tyreek.jpg" alt="tyreek hill">
+    </div>
+
+    <div id = "scheduleTable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Week</th><th>Opponent</th><th>Date</th><th>Time</th><th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td><td>Los Angeles Chargers</td><td>September 10, 2023</td><td>4:25 PM EST</td><td>SOFI Stadium</td>
+                </tr>
+                <tr>
+                    <td>2</td><td>New England Patriots</td><td>September 17, 2023</td><td>8:20 PM EST</td><td>Gillette Stadium</td>
+                </tr>
+                <tr>
+                    <td>3</td><td>Denver Broncos</td><td>September 24, 2023</td><td>1:00 PM EST</td><td>Hard Rock Stadium</td>
+                </tr>
+                <tr>
+                    <td>4</td><td>Buffalo Bills</td><td>October 1, 2023</td><td>1:00 PM EST</td><td>Highmark Stadium</td>
+                </tr>
+                <tr>
+                    <td>5</td><td>New York Giants</td><td>October 8, 2023</td><td>1:00 PM EST</td><td>Hard Rock Stadium</td>
+                </tr>
+                <tr>
+                    <td>6</td><td>Carolina Panthers</td><td>October 15, 2023</td><td>1:00 PM EST</td><td>Hard Rock Stadium</td>
+                </tr>
+                <tr>
+                    <td>7</td><td>Philadelphia Eagles</td><td>October 22, 2023</td><td>8:20 PM EST</td><td>Lincoln Financial Field</td>
+                </tr>
+                <tr>
+                    <td>8</td><td>New England Patriots</td><td>October 29, 2023</td><td>1:00 PM EST</td><td>Hard Rock Stadium</td>
+                </tr>
+                <tr>
+                    <td>9</td><td>Kansas City Chiefs</td><td>November 5, 2023</td><td>9:30 AM EST</td><td>Deutsche Bank Park</td>
+                </tr>
+                <tr>
+                    <td>10</td><td colspan="4">Bye</td>
+                </tr>
+                <tr>
+                    <td>11</td><td>Las Vegas Raiders</td><td>November 19, 2023</td><td>1:00 PM EST</td><td>Hard Rock Stadium</td>
+                </tr>
+                <tr>
+                    <td>12</td><td>New York Jets</td><td>November 24, 2023</td><td>3:00 PM EST</td><td>MetLife Stadium</td>
+                </tr>
+                <tr>
+                    <td>13</td><td>Washington Commanders</td><td>December 3, 2023</td><td>1:00 PM EST</td><td>FedEx Field</td>
+                </tr>
+                <tr>
+                    <td>14</td><td>Tennessee Titans</td><td>December 11, 2023</td><td>8:15 PM EST</td><td>Hard Rock Stadium</td>
+                </tr>
+                <tr>
+                    <td>15</td><td>New York Jets</td><td>December 17, 2023</td><td>1:00 PM EST</td><td>Hard Rock Stadium</td>
+                </tr>
+                <tr>
+                    <td>16</td><td>Dallas Cowboys</td><td>December 24, 2023</td><td>4:25 PM EST</td><td>Hard Rock Stadium</td>
+                </tr>
+                <tr>
+                    <td>17</td><td>Baltimore Ravens</td><td>December 31, 2023</td><td>1:00 PM EST</td><td>M&T Bank Stadium</td>
+                </tr>
+                <tr>
+                    <td>18</td><td>Buffalo Bills</td><td>TBD</td><td>TBD</td><td>Hard Rock Stadium</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="rightPic">
+        <img src="images/christian_wilkins.jpeg" alt="christian wilkins">
+    </div>
+
 </div>
 
 </html>
