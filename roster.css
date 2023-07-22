@@ -1,0 +1,107 @@
+body {
+    background-color: lightgrey;
+}
+
+header {
+    background-color: rgb(45, 43, 43);
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    padding-top: 15px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 15px;
+}
+
+#flippedLogo {
+    transform: scaleX(-1);
+}
+
+#redirect {
+    display: flex;
+    background-color: #00838D;
+    justify-content: space-around;
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 5px;
+}
+
+#myLink {
+    font-size: 24px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#myLink:hover {
+    color: #FC4C02;
+}
+
+#rosterMainHeader {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#rosterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rosterHeader {
+    background-color: white;
+    border-radius: 15px;
+    color: #FC4C02;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    box-shadow: #00838D 0px 0px 8px;
+}
+
+#rosterHeader:nth-child(n+2) {
+    margin-top: 50px;
+}
+
+#rosterTable {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 589px;
+    overflow: auto;
+}
+
+th{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #00838D;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+tbody tr {
+    background-color: white;
+}
+
+tbody tr:hover {
+    background-color: #FC4C02;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: center;
+}
