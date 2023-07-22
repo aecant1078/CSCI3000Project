@@ -3,94 +3,7 @@
 <head>
     <title>Roster - Miami Dolphins</title>
     <link rel="icon" href="https://static.clubs.nfl.com/dolphins/li4wimeg8novgtrguxli">
-
-    <style>
-        body {
-            background-color: lightgrey;
-        }
-
-        header {
-            background-color: rgb(45, 43, 43);
-            display: flex;
-            justify-content: space-between;
-            height: 125px;
-            padding-top: 15px;
-            margin-top: -8px;
-            margin-left: -8px;
-            margin-right: -8px;
-            margin-bottom: 15px;
-        }
-
-        #flippedLogo {
-            transform: scaleX(-1);
-        }
-
-        #redirect {
-            display: flex;
-            background-color: #00838D;
-            justify-content: space-around;
-            margin-top: -15px;
-            margin-left: -8px;
-            margin-right: -8px;
-            padding: 5px;
-        }
-
-        #myLink {
-            font-size: 24px;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-        }
-        
-        #rosterHeader {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #rosterContainer {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0 auto;
-        }
-
-        #rosterTable {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: white;
-            height: 589px;
-            overflow: auto;
-        }
-        
-        th{
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 10px;
-            padding-top: 10px;
-            background-color: #00838D;
-            color: white;
-            position: sticky;
-            top: 0;
-        }
-
-        tbody tr:hover {
-            background-color: #FC4C02;
-            color: white;
-        }
-
-        td {
-            text-align: center;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        tbody td {
-            padding: 10px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="roster.css">
 </head>
 
 <header>
@@ -109,7 +22,7 @@
 
 <div id = "redirect">
     <div>
-        <a href = "homepage.html" id="myLink">Homepage</a>
+        <a href = "index.html" id="myLink">Homepage</a>
     </div>
 
     <div>
@@ -121,18 +34,27 @@
     </div>
 </div>
 
-<div id = "rosterHeader">
+<div id = "rosterMainHeader">
     <h1>2023 Miami Dolphins Unofficial Roster:*</h1>
 </div>
 
 
-<div id = "rosterContainer">
+<div id = "mainContainer">
 
     <div id="leftPic">
         <img src="images/waddle.jpg" alt="jaylen waddle">
     </div>
 
+    <div id="rosterContainer">
+    
+    <h2 id="rosterHeader">
+        <button id="tableExpand" onclick="expand(1)">+</button>
+        Offense
+        <button id="tableCollapse" onclick="collapse(1)">-</button>
+    </h2>
+
     <div id = "rosterTable">
+        <div id="offense" style="display: none;">
         <table>
             <thead>
                 <tr>
@@ -218,6 +140,26 @@
                 <tr>
                     <td>Robert Jones</td><td>65</td><td>OL</td><td>Middle Tennessee State</td><td>3</td>
                 </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <h2 id="rosterHeader">
+        <button id="tableExpand" onclick="expand(2)">+</button>
+        Defense
+        <button id="tableCollapse" onclick="collapse(2)">-</button>
+    </h2>
+
+    <div id = "rosterTable">
+        <div id="defense" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Player Name</th><th>Number</th><th>Position</th><th>College Attended</th><th>Years Pro</th>
+                </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Christian Wilkins</td><td>94</td><td>DT</td><td>Clemson</td><td>5</td>
                 </tr>
@@ -290,6 +232,26 @@
                 <tr>
                     <td>Elijah Campbell</td><td>22</td><td>DB</td><td>Northern Iowa</td><td>4</td>
                 </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+    <h2 id="rosterHeader">
+        <button id="tableExpand" onclick="expand(3)">+</button>
+        Special Teams
+        <button id="tableCollapse" onclick="collapse(3)">-</button>
+    </h2>
+
+    <div id = "rosterTable">
+        <div id="specialTeams" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Player Name</th><th>Number</th><th>Position</th><th>College Attended</th><th>Years Pro</th>
+                </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Jason Sanders</td><td>7</td><td>K</td><td>New Mexico</td><td>6</td>
                 </tr>
@@ -301,6 +263,9 @@
                 </tr>
             </tbody>
         </table>
+        </div>
+    </div>
+
     </div>
 
     <div id="rightPic">
@@ -311,4 +276,5 @@
 
 <footer style="font-family: Arial, Helvetica, sans-serif; padding-top: 10px; font-size: 12px; text-align: center;">*53 man roster projection courtesy of <a href = "https://dolphinswire.usatoday.com/lists/dolphins-53-man-roster-projection-before-2023-training-camp/" target="_blank">dolphinswire.usatoday.com</a></footer>
 
+<script src="main.js"></script>
 </html>

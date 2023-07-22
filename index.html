@@ -3,97 +3,7 @@
 <head>
     <title>Homepage - Miami Dolphins</title>
     <link rel="icon" href="https://static.clubs.nfl.com/dolphins/li4wimeg8novgtrguxli">
-
-    <style>
-        body {
-            background-color: lightgrey;
-        }
-
-        header {
-            background-color: rgb(45, 43, 43);
-            display: flex;
-            justify-content: space-between;
-            height: 125px;
-            padding-top: 15px;
-            margin-top: -8px;
-            margin-left: -8px;
-            margin-right: -8px;
-            margin-bottom: 15px;
-        }
-
-        #flippedLogo {
-            transform: scaleX(-1);
-        }
-
-        #redirect {
-            display: flex;
-            background-color: #00838D;
-            justify-content: space-around;
-            margin-top: -15px;
-            margin-left: -8px;
-            margin-right: -8px;
-            padding: 5px;
-        }
-
-        #myLink {
-            font-size: 24px;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-        }
-
-        #myLink:hover {
-            color: #FC4C02;
-        }
-
-        #homepageHeader {
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #photos {
-            background-color: white;
-            border-radius: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: fit-content;
-            margin: 0 auto;
-        }
-
-        #news {
-            background-color: white;
-            border-radius: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-top: 5px;
-            padding-left: 10px;
-            padding-right: 5px;
-            padding-bottom: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: fit-content;
-            margin: 0 auto;
-            margin-top: 30px;
-        }
-
-        li {
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-
-        #newsLink {
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <header>
@@ -112,7 +22,7 @@
 
 <div id = "redirect">
     <div>
-        <a href = "homepage.html" id="myLink">Homepage</a>
+        <a href = "index.html" id="myLink">Homepage</a>
     </div>
 
     <div>
@@ -128,13 +38,49 @@
 <h1>Welcome to the Homepage of the Miami Dolphins!</h1>
 </div>
 
-<div id = "photos">
+<div class = "photos">
     <h2>Team Photos:</h2>
     
-    <div>
-    <!--Add JavaScript funtion to cycle through team photos-->
-    <img src="images/Tua-Tagovailoa.jpg" alt="placeholder photo">
+    <div class = "slidePhoto fade">
+        <img src="images/Tua-Tagovailoa.jpg" alt="Tua Tagovailoa">
     </div>
+
+    <div class = "slidePhoto fade">
+        <img src="images/jevon.jpg" alt="Jevon Holland">
+    </div>
+
+    <div class = "slidePhoto fade">
+        <img src="images/jaelan.jpg" alt="Jaelan Phillips">
+    </div>
+
+    <div class = "slidePhoto fade">
+        <img src="images/Jalen-Ramsey.jpg" alt="Jalen Ramsey">
+    </div>
+
+    <div class = "slidePhoto fade">
+        <img src="images/mike-mcd.jpg" alt="Mike McDaniel">
+    </div>
+
+    <div class = "slidePhoto fade">
+        <img src="images/jwgw.jpg" alt="Jaylen Waddle Game Winner">
+    </div>
+
+    <div class = "slidePhoto fade">
+        <img src="images/raheem-mostert.jpg" alt="Raheem Mostert">
+    </div>
+
+    <div style="text-align:center">
+        <br>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>   
+        <br>
+    </div>
+
 </div>
 
 <div id = "news">
@@ -151,5 +97,5 @@
         </p>
     </div>
 </div>
-
+<script src="main.js"></script>
 </html>
