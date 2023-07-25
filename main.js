@@ -45,3 +45,13 @@ function collapse(e) {
         document.getElementById('specialTeams').style.setProperty('display', 'none')
     }
 }
+
+function validateEmail(event) {
+	var email = document.getElementById('email').value;
+	var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5}$/;
+            
+            if (!emailRegex.test(email)) {
+                alert("Invalid email format! Please enter a valid email address.");
+                event.preventDefault();
+            }
+}
