@@ -22,27 +22,41 @@ function showSlides() {
     setTimeout(showSlides, 4000);
 }
 
+function mouseover(e, over) {
+    e.style.setProperty('box-shadow', over ? '#FC4C02 0px 0px 8px' : '#00838D 0px 0px 8px');
+}
+
 function expand(e) {
-    if (e == 1) {
-        document.getElementById('offense').style.setProperty('display', 'block')
-    }
-    else if (e == 2) {
-        document.getElementById('defense').style.setProperty('display', 'block')
-    }
-    else if (e == 3) {
-        document.getElementById('specialTeams').style.setProperty('display', 'block')
+    switch(e) {
+        case 1:
+            document.getElementById('offense').style.setProperty('display', 'block');
+            collapse(2);
+            collapse(3);
+            break;
+        case 2:
+            document.getElementById('defense').style.setProperty('display', 'block');
+            collapse(1);
+            collapse(3);
+            break;
+        case 3:
+            document.getElementById('specialTeams').style.setProperty('display', 'block');
+            collapse(1);
+            collapse(2);
+            break;
     }
 }
 
 function collapse(e) {
-    if (e == 1) {
-        document.getElementById('offense').style.setProperty('display', 'none')
-    }
-    else if (e == 2) {
-        document.getElementById('defense').style.setProperty('display', 'none')
-    }
-    else if (e == 3) {
-        document.getElementById('specialTeams').style.setProperty('display', 'none')
+    switch(e) {
+        case 1:
+            document.getElementById('offense').style.setProperty('display', 'none');
+            break;
+        case 2:
+            document.getElementById('defense').style.setProperty('display', 'none');
+            break;
+        case 3:
+            document.getElementById('specialTeams').style.setProperty('display', 'none');
+            break;
     }
 }
 
