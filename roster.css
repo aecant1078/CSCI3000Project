@@ -39,7 +39,6 @@ header {
     color: #FC4C02;
 }
 
-
 #mainContainer {
     display: flex;
     align-items: center;
@@ -59,7 +58,6 @@ header {
     align-items: center;
     height: 800px;
 }
-
 
 #rosterButtons {
     display: flex;
